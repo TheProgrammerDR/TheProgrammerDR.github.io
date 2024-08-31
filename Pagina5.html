@@ -11,7 +11,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $name = test_input($_POST["name"]);
       $email = test_input($_POST["email"]);
-      $website = test_input($_POST["website"]);
+      $age = test_input($_POST["website"]);
       $comment = test_input($_POST["comment"]);
       $gender = test_input($_POST["gender"]);
     }
@@ -30,7 +30,7 @@
       <br><br>
       E-mail: <input type="text" name="email">
       <br><br>
-      Website: <input type="text" name="website">
+      Age: <input type="text" name="age">
       <br><br>
       Comment: <textarea name="comment" rows="5" cols="40"></textarea>
       <br><br>
@@ -48,7 +48,7 @@
     echo "<br>";
     echo $email;
     echo "<br>";
-    echo $website;
+    echo $age;
     echo "<br>";
     echo $comment;
     echo "<br>";
