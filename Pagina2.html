@@ -4,9 +4,6 @@
 <head>
     <title>Menu</title>
     <style>
-        a {
-  color: rgb(249, 246, 247);
-}
         ul {
   list-style-type: none;
   margin: 0;
@@ -21,8 +18,18 @@ li {
 
 li a {
   display: block;
-  padding: 8px;
-  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+}
+
+.active {
+  background-color: #00c3ff;
 }
         #rcorners1 {
   border-radius: 25px;
@@ -50,6 +57,7 @@ li a {
 
 <body>
     <ul>
+        <li><a class="active" href="Pagina2.html">Home</a></li>
         <li><a href="Pagina3.html">About me</a></li>
     </ul>
 </body>
