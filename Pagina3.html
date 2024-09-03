@@ -3,6 +3,30 @@
     <head>
         <title>About me</title>
 <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffe2e296;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #00c3ff;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
     #rcorners1 {
   border-radius: 25px;
   background: #95ff00;
@@ -16,7 +40,10 @@
 </style>
     </head>
     <body>
-        <a href="Pagina2.html">Back to menu</a>
+        <ul>
+            <li><a href="Pagina2.html">Home</a></li>
+            <li><a class="active" href="Pagina3.html">About me</a></li>
+        </ul>
         <center>
         <h1 id="rcorners1">About me</h1>
         <h3>Hallo, ik ben Dante.</h3>
