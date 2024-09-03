@@ -7,25 +7,28 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  overflow: hidden;
   background-color: #333;
+}
+
+li {
+  float: left;
 }
 
 li a {
   display: block;
   color: white;
-  padding: 8px 16px;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-}
-
-li a.active {
-  background-color: #38a6c8;
-  color: white;
 }
 
 li a:hover:not(.active) {
   background-color: #555;
-  color: white;
+}
+
+.active {
+  background-color: #38a6c8;
 }
     #rcorners1 {
   border-radius: 25px;
@@ -43,6 +46,7 @@ li a:hover:not(.active) {
         <ul>
             <li><a href="Pagina2.html">Home</a></li>
             <li><a class="active" href="Pagina3.html">About me</a></li>
+            <li style="float:right"><a href="Pagina4.html">Socials</a></li>
         </ul>
         <center>
         <h1 id="rcorners1">About me</h1>
