@@ -1,3 +1,9 @@
 a {
     border: 1px solid black;
 }
+p {
+    color:white
+}
+body {
+    background-color: rgb(149, 142, 142);
+}
