@@ -42,7 +42,7 @@ function startGame() {
 
         if (timeLeft === 0) {
             clearInterval(gameInterval);
-            alert(`Tijd is om! Je hebt ${score} punten gescoord.`);
+            alert(`Time's up! Je score is ${score} punten.`);
             resetGame();
         }
     }, 1000);
