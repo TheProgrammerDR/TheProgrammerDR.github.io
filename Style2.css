@@ -16,6 +16,7 @@ h1 {
     background-color: #e0e0e0;
     border: 2px solid #333;
     border-radius: 10px;
+    display: none; /* Verberg het spel totdat het start */
 }
 
 #target {
@@ -29,9 +30,11 @@ h1 {
 
 .info {
     margin-top: 20px;
+    display: none; /* Verberg de score/tijd informatie totdat het spel start */
 }
 
-.info p {
-    font-size: 18px;
-    color: #333;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
