@@ -14,7 +14,7 @@ h1 {
     width: 400px;
     height: 400px;
     background-color: #000000;
-    border: 10px solid #534d4d;
+    border: 10px solid #6f6f6f;
     border-radius: 10px;
     display: none; /* Verberg het spel totdat het start */
 }
