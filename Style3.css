@@ -1,6 +1,6 @@
 marquee {
     font-size: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
     padding: 0px;     
 }
