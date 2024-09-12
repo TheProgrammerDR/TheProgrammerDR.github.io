@@ -22,10 +22,17 @@ function moveTarget() {
 }
 
 // Verhoog de score als op het doelwit wordt geklikt
-target.addEventListener("click", () => {
+target.addEventListener("click", (event) => {
+    event.stopPropagation(); // Voorkom dat de klik wordt geregistreerd als een klik op de container
     score++;
     scoreDisplay.textContent = score;
     moveTarget();
+});
+
+// Verlaag de score als er in het vak wordt geklikt maar niet op het doelwit
+gameContainer.addEventListener("click", () => {
+    score--;
+    scoreDisplay.textContent = score;
 });
 
 // Start de timer en de game
