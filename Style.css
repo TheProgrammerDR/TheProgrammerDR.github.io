@@ -2,8 +2,15 @@ p {
     color:rgb(0, 0, 0)
 }
 body {
-    background-color: rgb(255, 108, 108);
-}
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(255, 209, 209));
+    margin: 0px;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh
+  }
 h1 {
     color: black;
 }
