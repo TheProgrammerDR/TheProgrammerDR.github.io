@@ -23,8 +23,10 @@ h1 {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 50%;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.partiden.com%2Furun%2Fbuyuk-kirmizi-balon-1-adet&psig=AOvVaw2XUl2lb7xPN7TuOt7nxdNg&ust=1726251227860000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjO3oyBvogDFQAAAAAdAAAAABAE'); /* Vervang dit met jouw afbeelding */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Als je de afbeelding rond wilt houden */
     cursor: pointer;
 }
 
