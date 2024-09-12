@@ -7,3 +7,7 @@ body {
 h1 {
     color: black;
 }
+image {
+    border: 5px;
+    border-color: rgb(255, 0, 0);
+}
