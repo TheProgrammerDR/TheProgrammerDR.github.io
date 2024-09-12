@@ -8,6 +8,7 @@ h1 {
     color: black;
 }
 image {
-    border: 5px;
-    border-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    max-width: 100%;
+    border: solid 3px #ff0000;
 }
