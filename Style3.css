@@ -1,6 +1,7 @@
 marquee {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
     margin: 10px;
     padding: 0px;     
 }
