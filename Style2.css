@@ -19,10 +19,10 @@ h1 {
     display: none; /* Verberg het spel totdat het start */
 }
 
-#target {
+#target, #missedTarget {
     position: absolute;
     width: 30px;
-    height: 35px;
+    height: 30px;
     cursor: pointer;
 }
 

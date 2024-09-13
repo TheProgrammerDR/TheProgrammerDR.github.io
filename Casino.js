@@ -20,19 +20,29 @@ function moveTarget() {
     target.style.left = `${randomX}px`;
     target.style.top = `${randomY}px`;
 }
+// Verlaag de score en toon tijdelijk een andere afbeelding op de misserlocatie
+gameContainer.addEventListener("click", (event) => {
+    if (event.target !== target) {
+        score--;
+        scoreDisplay.textContent = score;
 
-// Verhoog de score als op het doelwit wordt geklikt
-target.addEventListener("click", (event) => {
-    event.stopPropagation(); // Voorkom dat de klik wordt geregistreerd als een klik op de container
-    score++;
-    scoreDisplay.textContent = score;
-    moveTarget();
-});
+        // Haal de positie van de klik op
+        const missedX = event.clientX - gameContainer.offsetLeft - (missedTarget.clientWidth / 2);
+        const missedY = event.clientY - gameContainer.offsetTop - (missedTarget.clientHeight / 2);
 
-// Verlaag de score als er in het vak wordt geklikt maar niet op het doelwit
-gameContainer.addEventListener("click", () => {
-    score--;
-    scoreDisplay.textContent = score;
+        // Verberg het doelwit en toon de misserafbeelding op de klikpositie
+        target.style.display = "none";
+        missedTarget.style.left = `${missedX}px`;
+        missedTarget.style.top = `${missedY}px`;
+        missedTarget.style.display = "block";
+
+        // Wacht 2 seconden en zet alles weer terug
+        setTimeout(() => {
+            missedTarget.style.display = "none"; // Verberg de misserafbeelding
+            target.style.display = "block"; // Toon het doelwit weer
+            moveTarget(); // Beweeg het doelwit naar een nieuwe plek
+        }, 2000); // 2 seconden
+    }
 });
 
 // Start de timer en de game
