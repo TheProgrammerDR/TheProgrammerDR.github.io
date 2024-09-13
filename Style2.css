@@ -13,8 +13,8 @@ h1 {
     margin: 20px auto;
     width: 1000px;
     height: 400px;
-    background-color: #000000;
-    border: 5px solid #6f6f6f;
+    background-color: #00fff7;
+    border: 5px solid #0065fd;
     border-radius: 10px;
     display: none; /* Verberg het spel totdat het start */
 }
@@ -22,7 +22,7 @@ h1 {
 #target {
     position: absolute;
     width: 30px;
-    height: 32px;
+    height: 35px;
     cursor: pointer;
 }
 
