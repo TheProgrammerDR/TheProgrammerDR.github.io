@@ -51,7 +51,7 @@ gameContainer.addEventListener("click", (event) => {
             missedTarget.style.display = "none"; // Verberg de misserafbeelding
             target.style.display = "block"; // Toon het doelwit weer
             moveTarget(); // Beweeg het doelwit naar een nieuwe plek
-        }, 2000); // 2 seconden
+        }, 500); // 2 seconden
     }
 });
 
