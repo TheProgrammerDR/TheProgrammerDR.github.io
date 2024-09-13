@@ -3,6 +3,7 @@ let timeLeft = 30;
 let gameInterval;
 
 const target = document.getElementById("target");
+const missedTarget = document.getElementById("missedTarget");
 const scoreDisplay = document.getElementById("score");
 const timeDisplay = document.getElementById("time");
 const startButton = document.getElementById("startButton");
@@ -20,6 +21,15 @@ function moveTarget() {
     target.style.left = `${randomX}px`;
     target.style.top = `${randomY}px`;
 }
+
+// Verhoog de score als op het doelwit wordt geklikt
+target.addEventListener("click", (event) => {
+    event.stopPropagation(); // Voorkom dat de klik wordt geregistreerd als een klik op de container
+    score++;
+    scoreDisplay.textContent = score;
+    moveTarget();
+});
+
 // Verlaag de score en toon tijdelijk een andere afbeelding op de misserlocatie
 gameContainer.addEventListener("click", (event) => {
     if (event.target !== target) {
@@ -59,7 +69,7 @@ function startGame() {
 
         if (timeLeft === 0) {
             clearInterval(gameInterval);
-            alert(`Time's up! Je score is ${score} punten.`);
+            alert(`Tijd is om! Je hebt ${score} punten gescoord.`);
             resetGame();
         }
     }, 1000);
