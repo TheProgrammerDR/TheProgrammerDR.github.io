@@ -5,3 +5,6 @@ marquee {
     margin: 10px;
     padding: 0px;     
 }
+.ImageBorder {
+    border: solid 5px color(black);
+}
