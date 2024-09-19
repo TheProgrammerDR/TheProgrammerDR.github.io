@@ -8,3 +8,51 @@ marquee {
 .ImageBorder {
     border: solid 5px color(black);
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Dit is zodat het menu mooi aansluit aan de pagina en de borders aanraakt.*/
+    background-color: #000000; /*De achtergrondkleur van het menu. Het was #333.*/
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+  }
+  
+  .active {
+    background-color: #0026ff;
+  }
+          #rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 150px;
+    height: 20px;  
+  }
+          body {
+              background-image: url(CentreSite.jpg);
+              margin: 0;
+              padding: 0;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              height: 100vh
+          }
+  
+          h4 {
+              color: red;
+          }
