@@ -1,72 +1,77 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Kleurmodellen</title>
-    <style>
-          ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #202020;
-}
+  <title>Kleurmodellen</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #202020;
+    }
 
-li {
-  float: left;
-}
+    li {
+      float: left;
+    }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-li a:hover:not(.active) {
-  background-color: #8d8d8d;
-}
+    li a:hover:not(.active) {
+      background-color: #8d8d8d;
+    }
 
-.active {
-  background-color: #0026ff;
-}
-body {
-    margin: 0px;
-}
-#rcorners1 {
-  border-radius: 25px;
-  background: #ff0000;
-  padding: 20px; 
-  width: 400px;
-  height: 90px;  
-}
-#rcorners3 {
-  border-radius: 25px;
-  background: #ff0000;
-  padding: 20px; 
-  width: 350px;
-  height: 40px;  
-}
-#rcorners2 {
-  border-radius: 25px;
-  background: #ff0000;
-  padding: 20px; 
-  width: 350px;
-  height: 60px;  
-}
-    </style>
-    <link rel="stylesheet" href="Style.css">
+    .active {
+      background-color: #0026ff;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    #rcorners1 {
+      border-radius: 25px;
+      background: #ff0000;
+      padding: 20px;
+      width: 400px;
+      height: 90px;
+    }
+
+    #rcorners3 {
+      border-radius: 25px;
+      background: #ff0000;
+      padding: 20px;
+      width: 350px;
+      height: 40px;
+    }
+
+    #rcorners2 {
+      border-radius: 25px;
+      background: #ff0000;
+      padding: 20px;
+      width: 350px;
+      height: 60px;
+    }
+  </style>
+  <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-    <ul>
+  <ul>
     <li><a href="Pagina2.html">Home</a></li>
     <li><a href="Pagina3.html">About me</a></li>
     <li><a class="active" href="Kleurmodellen.html">Kleurmodellen</a></li>
     <li><a href="BinairStelsel.html">Binair Stelsel</a></li>
     <li style="float:right"><a href="Pagina4.html">!</a></li>
-    </ul>
-    <center>
-      <h1 id="rcorners3">Kleurmodellen</h1>
+  </ul>
+  <center>
+    <h1 id="rcorners3">Kleurmodellen</h1>
     <p id="rcorners2">
       Een manier om een kleur numeriek te beschrijven wordt een kleurmodel genoemd.
       Veel voorkomende kleurmodellen zijn RGB, HSV en CMYK.
@@ -76,12 +81,18 @@ body {
       Dit model wordt gebruikt om door het gebruik van een code kleuren vast te leggen.
       De kleuren rood, groen en blauw zijn de kleurcomponenten en zwart is de basiskleur.
     </p>
-    <div class="container">
-      <img src="https://static.vecteezy.com/ti/gratis-vector/p3/15395713-rgb-kleur-model-regeling-additief-menging-drie-primair-kleuren-drie-overlapt-cirkels-gemakkelijk-illustratie-voor-onderwijs-vector.jpg" alt="kleurmodel RGB" class="image">
+    <div class="container" style="width: 250px;">
+      <img
+        src="https://static.vecteezy.com/ti/gratis-vector/p3/15395713-rgb-kleur-model-regeling-additief-menging-drie-primair-kleuren-drie-overlapt-cirkels-gemakkelijk-illustratie-voor-onderwijs-vector.jpg"
+        alt="kleurmodel RGB" class="image">
       <div class="overlay">
-        <div class="text">Wist je dat je met het kleurmodel RGB 16.777.216 kleuren kunt maken?</div>
+        <div class="text" style="width: 100%; word-wrap: break-word;">Wist je dat je met het kleurmodel
+          <br>RGB 16.777.216 kleuren kunt maken?
+        </div>
       </div>
     </div>
   </center>
+
 </body>
+
 </html>
