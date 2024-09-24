@@ -26,8 +26,8 @@ image {
   
   .image {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 70px;
+    height: 70px;
   }
   
   .overlay {
