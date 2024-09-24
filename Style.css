@@ -50,7 +50,7 @@ image {
   .text {
     white-space: nowrap; 
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     overflow: hidden;
     top: 50%;
