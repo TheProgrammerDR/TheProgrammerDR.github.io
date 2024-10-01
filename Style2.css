@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
-}
+}/*Dit is het lettertype dat wordt gebruikt op de pagina.*/
 
 h1 {
     color: #333;
@@ -16,23 +16,23 @@ h1 {
     background-color: #00c3ff;
     border: 5px solid #0065fd;
     border-radius: 10px;
-    display: none; /* Verbergt het spel totdat het start */
+    display: none; /*Verbergt het spel totdat je op de startknop drukt.*/
 }
 
 #target, #missedTarget {
     position: absolute;
     width: 30px;
     height: 30px;
-    cursor: pointer;
+    cursor: pointer;/*Dit zorgt ervoor dat de misserafbeelding de goede afmetingen heeft.*/
 }
 
 .info {
     margin-top: 20px;
-    display: none; /* Verbergt de informatie over de score en de tijd tot het spel start */
+    display: none; /*Verbergt de informatie over de score en de tijd tot het spel start.*/
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer;/*Dit zorgt voor de grote en breedte van de startknop*/
 }

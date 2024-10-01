@@ -1,7 +1,9 @@
+//Dit zorgt voor het scorebord en de timer.
 let score = 0;
 let timeLeft = 30;
 let gameInterval;
 
+//Dit zorgt voor alle functies zoals de target en de startknop om goed te functioneren.
 const target = document.getElementById("target");
 const missedTarget = document.getElementById("missedTarget");
 const scoreDisplay = document.getElementById("score");
@@ -10,7 +12,7 @@ const startButton = document.getElementById("startButton");
 const gameContainer = document.querySelector(".game-container");
 const info = document.querySelector(".info");
 
-// Beweeg het doelwit naar een willekeurige positie in de container
+//Zorgt ervoor dat het doelwit naar een willekeurige positie in de container beweegt.
 function moveTarget() {
     const maxX = gameContainer.clientWidth - target.clientWidth;
     const maxY = gameContainer.clientHeight - target.clientHeight;
@@ -22,47 +24,48 @@ function moveTarget() {
     target.style.top = `${randomY}px`;
 }
 
-// Verhoog de score als op het doelwit wordt geklikt
+//Deze functie verhoogt de score als je op het doelwit klikt.
 target.addEventListener("click", (event) => {
-    event.stopPropagation(); // Voorkom dat de klik wordt geregistreerd als een klik op de container
+    event.stopPropagation(); //Voorkomt dat als je klikt de klik wordt geregistreerd als een klik op de container.
     score++;
     scoreDisplay.textContent = score;
     moveTarget();
 });
 
-// Verlaag de score en toon tijdelijk een andere afbeelding op de misserlocatie
+//Verlaagt de score en toont tijdelijk een andere afbeelding op de plek waar je mis klikte.
 gameContainer.addEventListener("click", (event) => {
     if (event.target !== target) {
         score--;
         scoreDisplay.textContent = score;
 
-        // Haal de positie van de klik op
+        //Registreerd de positie van de klik
         const missedX = event.clientX - gameContainer.offsetLeft - (missedTarget.clientWidth / 2);
         const missedY = event.clientY - gameContainer.offsetTop - (missedTarget.clientHeight / 2);
 
-        // Verberg het doelwit en toon de misserafbeelding op de klikpositie
+        //Verbergt het doelwit en toon de afbeelding als je mist op de klikpositie.
         target.style.display = "none";
         missedTarget.style.left = `${missedX}px`;
         missedTarget.style.top = `${missedY}px`;
         missedTarget.style.display = "block";
 
-        // Wacht 2 seconden en zet alles weer terug
+        //Wacht 0,5 seconden en zet alles weer terug.
         setTimeout(() => {
-            missedTarget.style.display = "none"; // Verberg de misserafbeelding
-            target.style.display = "block"; // Toon het doelwit weer
-            moveTarget(); // Beweeg het doelwit naar een nieuwe plek
-        }, 500); // 2 seconden
+            missedTarget.style.display = "none"; //Verbergt de misserafbeelding.
+            target.style.display = "block"; //Toont de ballon weer.
+            moveTarget(); //Beweegt het doelwit naar een nieuwe plek.
+        }, 500); //Timer voor hoelang de misserafbeelding wordt getoont als je misklikt.
     }
 });
 
-// Start de timer en de game
+//Start de timer en de game.
 function startGame() {
-    startButton.style.display = "none"; // Verberg de startknop
-    gameContainer.style.display = "block"; // Toon de game-container
-    info.style.display = "block"; // Toon de score en tijd informatie
+    startButton.style.display = "none"; //Verbergt de startknop.
+    gameContainer.style.display = "block"; //Toont de game-container.
+    info.style.display = "block"; //Toon de score en tijd onder de game-container.
 
-    moveTarget(); // Beweeg het doelwit direct bij de start
+    moveTarget(); //Beweegt de ballon direct bij de start.
 
+    //Zorgt ervoor dat je nadat de timer is afgelopen een notificatie krijgt van hoeveel punten je hebt gescoord.
     gameInterval = setInterval(() => {
         timeLeft--;
         timeDisplay.textContent = timeLeft;
@@ -75,18 +78,18 @@ function startGame() {
     }, 1000);
 }
 
-// Reset de game
+//Reset de game.
 function resetGame() {
     score = 0;
     timeLeft = 30;
     scoreDisplay.textContent = score;
     timeDisplay.textContent = timeLeft;
 
-    // Verberg de game-container en toon de startknop opnieuw
+    //Verbergt de game-container en toon de startknop opnieuw.
     gameContainer.style.display = "none";
     info.style.display = "none";
     startButton.style.display = "inline-block";
 }
 
-// Start het spel wanneer de startknop wordt ingedrukt
+//Start het spel wanneer de startknop wordt ingedrukt.
 startButton.addEventListener("click", startGame);

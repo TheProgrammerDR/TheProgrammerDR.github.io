@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klik op het Doelwit</title>
-    <link rel="stylesheet" href="Style2.css">
+    <link rel="stylesheet" href="Style2.css"><!--Dit zorgt ervoor dat de game mechanics en de layout aansluiten op de pagina en alles goed gekoppeld is.-->
     <style>
         ul {
   list-style-type: none;
@@ -33,17 +33,17 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #0026ff;
-}
+}/*Dit zorgt voor het menu*/
 body {
     margin: 0px;
-}
+}/*Dit zorgt ervoor dat het menu goed aansluit aan de border van de pagina*/
 #rcorners2 {
   border-radius: 25px;
   background: #0099ff;
   padding: 20px; 
   width: 350px;
   height: 30px;  
-}
+}/*Dit is een type hoeken die je kunt gebruiken om tekst of plaatjes mooi af te ronden*/
     </style>
 </head>
 <body>
@@ -53,20 +53,19 @@ body {
         <li><a href="Kleurmodellen.html">Kleurmodellen</a></li>
         <li><a href="BinairStelsel.html">Binair Stelsel</a></li>
         <li style="float:right"><a class="active" href="Pagina4.html">!</a></li>
-    </ul>
+    </ul><!--Dit is nog een unordered list.-->
     <center>
     <h1 id="rcorners2">Pop de Ballon!</h1>
     <p>Pop de ballon om punten te scoren. Na 30 seconden krijg je je score te zien.</p>
-  </center>
+  </center><!--Dit is de tekst die aangeeft wat je bij het spelletje moet doen.-->
 
-    <!-- Startknop -->
-    <button id="startButton">Play</button>
+    <button id="startButton">Play</button><!--Dit is de startknop-->
 
       <div class="game-container">
-        <!-- Verander het rode bolletje naar een afbeelding door een img-tag te gebruiken -->
-        <img id="target" src="d8e4be7b656139e6549636139623b52a.png" alt="Doelwit">
-        <!-- Tijdelijke misser afbeelding -->
-        <img id="missedTarget" src="milker_X_icon.png" alt="Misser" style="display: none;">
+      
+        <img id="target" src="d8e4be7b656139e6549636139623b52a.png" alt="Doelwit"> <!--Verandert het rode bolletje naar de afbeelding van de ballon.-->
+        
+        <img id="missedTarget" src="milker_X_icon.png" alt="Misser" style="display: none;"><!--Tijdelijke afbeelding als je mis klikt.-->
     </div>
 
     </div>
@@ -74,7 +73,7 @@ body {
     <div class="info">
         <p>Punten: <span id="score">0</span></p>
         <p>Timer: <span id="time">30</span> seconden</p>
-    </div>
-    <script src="Casino.js"></script>
+    </div><!--Dit zorgt voor de score en de timer die in de loop van het spelletje veranderd.-->
+    <script src="Casino.js"></script><!--Dit koppelt deze pagina aan het spelletje wat in Java Script is geschreven.-->
 </body>
 </html>

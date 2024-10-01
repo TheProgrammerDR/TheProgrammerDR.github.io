@@ -4,7 +4,7 @@ marquee {
     font-weight: 900;
     margin: 10px;
     padding: 0px;     
-}
+}/*Dit zorgt ervoor dat de marquee er uit ziet zoals die is.*/
 .ImageBorder {
     border: solid 5px color(black);
 }
@@ -41,7 +41,7 @@ ul {
     padding: 20px; 
     width: 150px;
     height: 20px;  
-  }
+  }/*De hele tekst hierboven zorgt voor een mooie en verzorgde menubalk*/
           body {
               background-image: url(CentreSite.jpg);
               margin: 0;
@@ -51,7 +51,7 @@ ul {
               background-repeat: no-repeat;
               background-attachment: fixed;
               height: 100vh
-          }
+          }/*Dit zorgt voor mijn zelfgemaakte achtergrond. Deze heb ik zelf ontworpen om een mooi orgineel beeld te brengen*/
   
           h4 {
               color: red;
