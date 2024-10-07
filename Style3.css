@@ -5,9 +5,7 @@ marquee {
     margin: 10px;
     padding: 0px;     
 }/*Dit zorgt ervoor dat de marquee er uit ziet zoals die is.*/
-.ImageBorder {
-    border: solid 5px color(black);
-}
+
 ul {
     list-style-type: none;
     margin: 0;
