@@ -54,3 +54,6 @@ ul {
           h4 {
               color: red;
           }
+          img {
+            border: 5px solid #000;
+          }
