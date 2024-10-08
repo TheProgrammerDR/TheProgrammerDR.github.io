@@ -31,4 +31,7 @@ ul {
   body {
       margin: 0px;
   }
+  img {
+    border: 2px solid #000;
+  }
   
