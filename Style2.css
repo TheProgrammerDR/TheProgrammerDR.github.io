@@ -12,8 +12,8 @@ h1 {
     margin: 20px auto;
     width: 1000px;
     height: 400px;
-    background-color: #ff0000;
-    border: 5px solid #ffff00;
+    background-color: #0077ff;
+    border: 5px solid #ff00e1;
     border-radius: 10px;
     display: none; /*Verbergt het spel totdat je op de startknop drukt.*/
 }
