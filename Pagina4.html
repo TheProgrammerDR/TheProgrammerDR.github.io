@@ -34,9 +34,25 @@ li a:hover:not(.active) {
 .active {
   background-color: #0026ff;
 }/*Dit zorgt voor het menu*/
-body {
+
+   body {
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(0, 229, 255));
     margin: 0px;
-}/*Dit zorgt ervoor dat het menu goed aansluit aan de border van de pagina*/
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh
+  } /*Dit zorgt ervoor dat het menu goed aansluit aan de border van de pagina*/
+#rcorners1 {
+  border-radius: 25px;
+  border: 2px solid #00fffb;
+  background: #0099ff;
+  padding: 20px; 
+  width: 450px;
+  height: 30px;  
+}
 #rcorners2 {
   border-radius: 25px;
   border: 2px solid #00fffb;
@@ -58,7 +74,7 @@ body {
     </ul><!--Dit is nog een unordered list.-->
     <center>
     <h1 id="rcorners2">Pop de Ballon!</h1>
-    <p>Pop de ballon om punten te scoren. Na 30 seconden krijg je je score te zien.</p>
+    <p id="rcorners1">Pop de ballon om punten te scoren. Na 30 seconden krijg je je score te zien.</p>
   </center><!--Dit is de tekst die aangeeft wat je bij het spelletje moet doen.-->
 
     <button id="startButton">Play</button><!--Dit is de startknop-->
