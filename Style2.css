@@ -1,7 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
 }/*Dit is het lettertype dat wordt gebruikt op de pagina.*/
 
 h1 {
@@ -13,8 +12,8 @@ h1 {
     margin: 20px auto;
     width: 1000px;
     height: 400px;
-    background-color: #00c3ff;
-    border: 5px solid #0065fd;
+    background-color: #ff0000;
+    border: 5px solid #ffff00;
     border-radius: 10px;
     display: none; /*Verbergt het spel totdat je op de startknop drukt.*/
 }
