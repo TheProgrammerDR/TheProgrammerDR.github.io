@@ -62,11 +62,8 @@ image {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #202020;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    overflow: hidden; /*Dit is zodat het menu mooi aansluit aan de pagina en de borders aanraakt.*/
+    background-color: #202020; /*De achtergrondkleur van het menu. Het was #333.*/
   }
 
   li {
