@@ -2,7 +2,7 @@ p {
     color:rgb(0, 0, 0)
 }
 body {
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 64, 64));
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0));
     margin: 0px;
       padding: 0;
       background-size: cover;
